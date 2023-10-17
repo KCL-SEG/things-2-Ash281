@@ -5,11 +5,10 @@
 <body>
   <h1>
     Things
+      {% csrf_token %}
+      {{ form.as_p }} 
+    <input type="submit" value="Submit">
   </h1>
-  <p>  
-    {% csrf_token %}
-    {{ form.as_p }} 
-  </p>
   <p>Some stuff about things goes here.</p>
 </body>
 </html>
